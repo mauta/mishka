@@ -1,0 +1,35 @@
+.form-main__title--wrap {
+  background-color: $light-gray;
+  padding-top: 74px;
+  padding-bottom: 74px;
+  margin-bottom: 30px;
+}
+
+.form-main__title {
+  @include title;
+  text-align: center;
+  font-size: 27px;
+  line-height: 30px;
+}
+
+.form-main__text {
+  @include text;
+  font-size: 13px;
+  line-height: 24px;
+  width: 245px;
+}
+
+.form-main__content {
+  padding-left: 30px;
+}
+
+.form-main__fieldset {
+  border: none;
+  padding: 0;
+  width: 260px;
+
+}
+
+.form-main__button {
+  margin-bottom: 55px;
+}

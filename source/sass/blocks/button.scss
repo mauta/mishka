@@ -1,0 +1,34 @@
+.button {
+  width: 260px;
+  height: 52px;
+  border: 2px solid $gray;
+  background-color: #ffffff;
+
+  color: $gray;
+  font-family: "Open Sans";
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.button--tuny{
+  background-color: #63d1bb;
+  border:none;
+  color: white;
+  display: block;
+  margin: 0 auto;
+}
+
+.button--cart{
+
+  border: none;
+  width: 20px;
+  height: 20px;
+  // временно
+  background-color: $tuny;
+}
+
+.button--catalog{
+  width: 192px;
+}

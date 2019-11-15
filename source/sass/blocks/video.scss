@@ -1,0 +1,26 @@
+.video{
+  border: 1px solid $light-gray;
+  width: 260px;
+  box-sizing: border-box;
+  margin: 0 auto 58px;
+}
+
+.video__title {
+  margin: 0;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+  width: 130px;
+}
+
+.catalog__button{
+  display: block;
+  margin: 0 auto 34px;
+}
+
+.video__text{
+  @include text;
+  width: 185px;
+  margin-left: 34px;
+  margin-bottom: 29px;
+}

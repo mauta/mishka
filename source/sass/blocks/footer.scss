@@ -1,0 +1,25 @@
+.footer{
+  background-color: #f1f1f1;
+  padding-top: 30px;
+  padding-left: 20px;
+}
+
+.social__list{
+  @include list;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.social__link{
+  @include link;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+}
+
+.copyright__text{
+  font-size: 19px;
+font-weight: 700;
+line-height: 18px;
+}

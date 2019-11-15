@@ -1,0 +1,26 @@
+.about {
+  padding-top: 28px;
+  padding-left: 29px;
+}
+
+.about__title {
+  @include title;
+
+}
+
+.about__list {
+  @include list;
+  padding-top: 86px;
+}
+
+.about__item {
+  padding-bottom: 83px;
+  width: 252px;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.about__item:last-child{
+  padding-bottom: 0;
+}

@@ -1,0 +1,44 @@
+.reviews__title {
+  @include title;
+  margin-bottom: 24px;
+}
+
+.reviews {
+  padding-top: 54px;
+  padding-left: 29px;
+}
+
+.reviews__item {
+  margin: 0;
+  width: 256px;
+  margin-bottom: 27px;
+}
+
+.reviews__text {
+  @include text;
+  line-height: 30px;
+  margin: 0;
+  margin-bottom: 27px;
+
+}
+
+.reviews__author {
+  // для пп изнчально 24
+  line-height: 27px;
+  font-size: 17px;
+  margin: 0;
+
+}
+
+.reviews__ig {
+  @include text;
+  line-height: 30px;
+  font-style: normal;
+  font-size: 17px;
+}
+
+.reviews__button-wrap{
+  height: 52px;
+  border: 1px solid red;
+  margin-bottom: 38px;
+}

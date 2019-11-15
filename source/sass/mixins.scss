@@ -1,0 +1,45 @@
+@mixin visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+@mixin list {
+  list-style: none;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+@mixin link {
+  text-decoration: none;
+
+}
+
+@mixin title {
+  font-weight: 700;
+  line-height: 30px;
+  font-size: 25px;
+  margin: 0;
+}
+
+@mixin subtitle {
+  color: #63d1bb;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+@mixin text {
+  color: $gray;
+  font-family: "Open Sans";
+  font-size: 15px;
+  font-weight: 400;
+}

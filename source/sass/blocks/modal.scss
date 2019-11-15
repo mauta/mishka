@@ -1,0 +1,26 @@
+.modal__title {
+  @include title;
+  line-height: 30px;
+  text-transform: uppercase;
+  width: 150px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.modal {
+  padding-top: 36px;
+
+}
+
+.modal__legend {
+  @include text;
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.modal__fieldset {
+  border: none;
+  margin-bottom: 30px;
+}

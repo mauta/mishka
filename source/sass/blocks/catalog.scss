@@ -1,0 +1,37 @@
+.catalog__title {
+  @include title;
+  text-align: center;
+}
+
+.catalog__list {
+  @include list;
+}
+
+.catalog__title--wrap {
+  background-color: $light-gray;
+  padding: 74px 42px;
+  margin-bottom: 30px;
+}
+
+.catalog__item {
+  width: 260px;
+  border: 1px solid $light-gray;
+  margin: 0 auto 30px;
+}
+
+.catalog__name {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.catalog__character {
+  @include text;
+  font-size: 13px;
+
+}
+
+.catalog__price {
+  font-size: 15px;
+  line-height: 24px;
+}
