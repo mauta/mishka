@@ -13,3 +13,39 @@
 .color__item{
   margin-bottom: 25px;
 }
+
+@media(min-width:768px){
+  .color__list{
+    font-size: 19px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 500px;
+  }
+
+  .color__legend{
+    width: 168px;
+    display: block;
+    padding: 0;
+  }
+
+  .color__item{
+    width: 248px;
+  }
+
+  .form-main__color{
+    background-color: $light-gray;
+  }
+}
+
+@media(min-width:1250px){
+  .color__list{
+    font-size: 19px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 700px;
+  }
+
+  .color__item{
+    width: 200px;
+  }
+}

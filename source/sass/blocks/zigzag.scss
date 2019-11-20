@@ -1,8 +1,37 @@
 .zigzag{
   background-image: url(../../img/bg-zigzag-line.svg);
   background-size: contain;
+  background-repeat: no-repeat;
   margin-top: 35px;
   width: 320px;
   height: 6px;
+
+}
+@media(min-width:768px){
+  .zigzag{
+  width: 768px;
+  height: 17px;
+}
+}
+
+@media(min-width:1150px){
+  .zigzag{
+  background-image: url(../../img/bg-zigzag-fill.svg);
+  background-size: contain;
+  background-repeat: repeat;
+  width: 1050px;
+  height: 34px;
+  margin:0 auto ;
+}
+
+.zigzag--md{
+  background-image: url(../../img/bg-zigzag-line.svg);
+  background-size: cover;
+  background-repeat: repeat;
+  margin-top: 35px;
+  width: 1050px;
+  height: 24px;
+}
+
 
 }

@@ -13,3 +13,15 @@
 .kind__item{
   margin-bottom: 25px;
 }
+
+@media(min-width:768px){
+  .kind__list{
+    font-size: 19px;
+  }
+
+  .kind__legend{
+    width: 168px;
+    padding: 0;
+  }
+
+}

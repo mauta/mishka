@@ -13,3 +13,14 @@
 .fio__item{
   margin-bottom: 25px;
 }
+
+@media(min-width:768px){
+  .fio__list{
+    font-size: 19px;
+  }
+
+  .fio__legend{
+    width: 168px;
+    padding: 0;
+  }
+}

@@ -10,10 +10,11 @@
   font-weight: 700;
   line-height: 20px;
   text-transform: uppercase;
+  box-sizing: border-box;
 }
 
 .button--tuny{
-  background-color: #63d1bb;
+  background-color: $tuny;
   border:none;
   color: white;
   display: block;
@@ -31,4 +32,22 @@
 
 .button--catalog{
   width: 192px;
+}
+
+@media(min-width:768px) {
+  .button{
+    width: 292px;
+  }
+  .button--catalog{
+    width: 584px;
+  }
+
+  .button--tuny{
+    width: 350px;
+  }
+
+  .button--form{
+    width: 230px;
+  }
+
 }

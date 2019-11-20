@@ -1,7 +1,7 @@
-.things{
+.things {
   width: 100%;
   min-height: 490px;
-  background-color:#fafafa;
+  background-color: #fafafa;
   background-image: url(../../img/hero-mobile@1x.jpg);
   background-repeat: no-repeat;
   background-position: center -17px;
@@ -9,7 +9,7 @@
   box-sizing: border-box;
 }
 
-.things__title{
+.things__title {
   @include title;
   font-size: 27px;
   text-align: center;
@@ -18,7 +18,7 @@
   margin-bottom: 123px;
 }
 
-.things__kind{
+.things__kind {
   display: block;
   @include link;
   width: 100%;
@@ -27,30 +27,31 @@
   padding-top: 25px;
   padding-left: 28px;
   position: relative;
- }
-
-.things__kind--lighted{
- background-color: #63d1bb;
 }
 
-.things__kind--darked{
+.things__kind--lighted {
+  background-color: #63d1bb;
+}
+
+.things__kind--darked {
   background-color: #56c3b2;
- }
-
-.things__name{
-color: #ffffff;
-font-size: 19px;
-font-weight: 700;
-line-height: 24px;
-width: 110px;
-display: block;
 }
 
-.things__icon{
+.things__name {
+  color: #ffffff;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 24px;
+  width: 110px;
+  display: block;
+}
+
+.things__icon {
   position: absolute;
 
 }
-.things__icon--toy{
+
+.things__icon--toy {
   background-image: url(../../img/icon-toy.svg);
   width: 60px;
   height: 60px;
@@ -58,11 +59,80 @@ display: block;
   top: 21px;
   opacity: 0.5;
 }
-.things__icon--interior{
+
+.things__icon--interior {
   background-image: url(../../img/icon-interior.svg);
   width: 40px;
   height: 62px;
   right: 37px;
   top: 23px;
   opacity: 0.5;
+}
+
+@media(min-width:768px) {
+  .things {
+    width: 100%;
+    min-height: 746px;
+    background-color: #fafafa;
+    background-image: url(../../img/hero-tablet@1x.jpg);
+    background-repeat: no-repeat;
+    background-position: center 0px;
+    padding-top: 154px;
+    box-sizing: border-box;
+    margin-top: -90px;
+  }
+
+  .things__title {
+    font-size: 43px;
+    line-height: 50px;
+    width: 500px;
+  }
+
+  .things__kind-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: auto;
+  }
+
+  .things__kind {
+    width: 334px;
+    // временно
+    height: 119px;
+  }
+
+  .things {
+    display: flex;
+    flex-direction: column;
+
+  }
+
+}
+
+@media(min-width:1150px) {
+  .things {
+    min-height: 746px;
+    background-image: url(../../img/hero-desktop@1x.jpg);
+    padding-top: 155px;
+    margin-top: -104px;
+  }
+
+  .things__title {
+    @include title-bigest;
+    width: 615px;
+  }
+
+  .things__kind {
+    width: 525px;
+    // временно
+    height: 118px;
+    padding-top: 28px;
+    padding-left: 37px;
+
+  }
+
+  .things__name {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

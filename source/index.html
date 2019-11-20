@@ -9,74 +9,91 @@
 </head>
 
 <body class="body">
-  <header class="header">
-    <a class="header__logo">
-      <img class="header__logo-img" src="img/logo-mobile.svg" alt="Лого Мишка" width="86" height="35">
+  <header class="menu">
+    <a class="menu__logo">
+      <img class="menu__logo-img" src="img/logo-mobile.svg" alt="Лого Мишка" width="86" height="35">
     </a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
-      <div class="main-nav__wrap">
-        <ul class="main-nav__list">
-          <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Каталог товаров</a></li>
-          <li class="main-nav__item"><a class="main-nav__link" href="form.html">Вязание на заказ</a></li>
-          <li class="main-nav__item"><a class="main-nav__link" href="#">Поиск по сайту</a></li>
-          <li class="main-nav__item"><a class="main-nav__link" href="#">Корзина: пока пуста</a></li>
-        </ul>
-      </div>
-    </nav>
+
+    <button class="menu__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+    <ul class="menu__list menu__nav">
+      <li class="menu__item"><a class="menu__link" href="catalog.html">Каталог товаров</a></li>
+      <li class="menu__item"><a class="menu__link" href="form.html">Вязание на заказ</a></li>
+    </ul>
+    <ul class="menu__list menu__order">
+      <li class="menu__item menu__search"><a class="menu__link" href="#"><span class="menu__link-search">Поиск по сайту</span></a></li>
+      <li class="menu__item menu__cart"><a class="menu__link" href="#">Корзина: пока пуста</a></li>
+    </ul>
+    <ul class="menu__list menu__sale">
+      <li class="menu__item--small"><a class="menu__link" href="#">Новые поступления</a></li>
+      <li class="menu__item--small"><a class="menu__link" href="#">Распродажа</a></li>
+    </ul>
+    <p class="menu__text">Бесплатная доставка по России</p>
+
+
   </header>
   <main class="main">
     <h1 class="visually-hidden">Мишка - магазин вязаных штучек</h1>
     <section aria-labelledby="things" class="things">
       <h2 id="things" class="things__title">Милые штуки ручной работы&nbsp;для дома</h2>
-      <a href="#" class="things__kind things__kind--lighted">
-        <span class="things__name">Предметы интерьера</span>
-        <span class="things__icon--interior things__icon"></span>
-      </a>
-      <a href="#" class="things__kind things__kind--darked">
-        <span class="things__name">Детские игрушки</span>
-        <span class="things__icon--toy things__icon"></span>
-      </a>
+      <div class="things__kind-wrap">
+        <a href="#" class="things__kind things__kind--lighted">
+          <span class="things__name">Предметы интерьера</span>
+          <span class="things__icon--interior things__icon"></span>
+        </a>
+        <a href="#" class="things__kind things__kind--darked">
+          <span class="things__name">Детские игрушки</span>
+          <span class="things__icon--toy things__icon"></span>
+        </a>
+      </div>
     </section>
 
     <section aria-labelledby="product-week" class="product-week">
-      <h3 id="product-week" class="product-week__title product-week__title--pos">Вязаные корзинки</h3>
-      <p class="product-week__name">товар недели</p>
-      <p class="product-week__text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех
-        размерах.</p>
-      <table class="product-week__description">
-        <tr class="product-week__row">
-          <td class="product-week__field">
-            Цвет:
-          </td>
-          <td class="product-week__value">
-            «Тиффани»/серый
-          </td>
-        </tr>
-        <tr class="product-week__row">
-          <td class="product-week__field">
-            Диаметр:
-          </td>
-          <td class="product-week__value">
-            25 см
-          </td>
-        </tr>
-        <tr class="product-week__row">
-          <td class="product-week__field">
-            Высота:
-          </td>
-          <td class="product-week__value">
-            15 см
-          </td>
-        </tr>
-      </table>
-      <img class="product-week__img" src="img/triple-set-mobile.jpg" alt="Набор из трех корзин" width="260"
-        height="315">
-      <p class="product-week__price">Цена: 990 руб.</p>
-      <button class="button product-week__button" type="button">Заказать</button>
+
+      <div class="product-week__title-wrap">
+        <h3 class="product-week__title product-week__title--pos" id="product-week">Вязаные корзинки</h3>
+        <p class="product-week__name">товар недели</p>
+      </div>
+      <div class="product-week__content">
+        <div class="product-week__text-wrap">
+          <p class="product-week__text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех
+            размерах.</p>
+          <table class="product-week__description">
+            <tr class="product-week__row">
+              <td class="product-week__field">
+                Цвет:
+              </td>
+              <td class="product-week__value">
+                «Тиффани»/серый
+              </td>
+            </tr>
+            <tr class="product-week__row">
+              <td class="product-week__field">
+                Диаметр:
+              </td>
+              <td class="product-week__value">
+                25 см
+              </td>
+            </tr>
+            <tr class="product-week__row">
+              <td class="product-week__field">
+                Высота:
+              </td>
+              <td class="product-week__value">
+                15 см
+              </td>
+            </tr>
+          </table>
+        </div>
+        <img class="product-week__img" src="img/triple-set-mobile.jpg" alt="Набор из трех корзин" width="260"
+          height="315">
+        <div class="product-week__order">
+          <p class="product-week__price">Цена: 990 руб.</p>
+          <button class="button product-week__button" type="button">Заказать</button>
+        </div>
+      </div>
 
     </section>
-    <div class="zigzag"></div>
+    <div class="zigzag zigzag--md"></div>
     <section aria-labelledby="about" class="about">
       <h2 id="about" class="title about__title">Коротко о нас:</h2>
       <ul class="about__list">
@@ -108,49 +125,58 @@
     </section>
 
     <section aria-labelledby="reviews" class="reviews">
-      <h2 id="reviews" class="reviews__title">Отзывы</h2>
-      <blockquote class="reviews__item">
+      <div class="reviews__content">
+        <h2 class="reviews__title" id="reviews">Отзывы</h2>
         <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и&nbsp;близко такого количества
           лайков,
           как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу
           стали более стильными, а также набирают больше лайков!</p>
-        <b class="reviews__author">Анастасия Красильникова</b>
-        <cite class="reviews__ig">@misssssiskras</cite>
-      </blockquote>
-      <div class="reviews__button-wrap">
-        <button class="reviews__prev" type="button">Предыдущий отзыв</button>
-        <button class="reviews__next" type="button">Следующий отзыв</button>
+
+        <div class="reviews__author-wrap">
+          <b class="reviews__author">Анастасия Красильникова</b>
+          <p class="reviews__ig">@misssssiskras</p>
+        </div>
+
+        <div class="reviews__button-wrap">
+          <button class="reviews__prev" type="button">Предыдущий отзыв</button>
+          <button class="reviews__next" type="button">Следующий отзыв</button>
+        </div>
+        <button class="button reviews__button" type="button">Написать</button>
       </div>
-      <button class="button reviews__button" type="button">Написать</button>
+
     </section>
 
-    <div class="zigzag"></div>
+    <div class="zigzag zigzag--md"></div>
+
     <section aria-labelledby="contacts" class="contacts">
       <div class="contacts__text-wrap">
-        <h2 id="contacts" class="contacts__title">Контакты</h2>
-        <table class="contacts__description">
-          <tr class="contacts__row">
-            <td class="contacts__field">
+        <div class="contacts__title-wrap">
+          <h2 id="contacts" class="contacts__title">Контакты</h2>
+          <span class="contacts__flag"></span>
+        </div>
+        <ul class="contacts__list">
+          <li class="contacts__item">
+            <span class="contacts__field">
               e-mail:
-            </td>
-            <td class="contacts__value">
+            </span>
+            <span class="contacts__value">
               info@mimimishkashop.ru
-            </td>
-          </tr>
-          <tr class="contacts__row">
-            <td class="contacts__field">
+            </span>
+          </li>
+          <li class="contacts__item">
+            <span class="contacts__field">
               адрес:
-            </td>
-            <td class="contacts__value">
-              г. Санкт-Петербург,
-              ул. Большая Конюшенная,
+            </span>
+            <span class="contacts__value">
+              г. Санкт-Петербург,<br>
+              ул. Большая Конюшенная,<br>
               д. 19/8, офис 101
-            </td>
-          </tr>
-        </table>
+            </span>
+          </li>
+        </ul>
       </div>
-      <div class="contacts__map"><img src="img/map-mobile.jpg" alt="г. Санкт-Петербург,
-            ул. Большая Конюшенная,д. 19/8, офис 101" width="320" height="457">
+      <div class="contacts__map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2376.7199005591224!2d30.32037672571726!3d59.939190072511366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x62740c0ffcd8a91f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsIDEwMSwg0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsIDE5MTE4Ng!5e0!3m2!1sru!2sru!4v1574075749612!5m2!1sru!2sru" width="525" height="457" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
       </div>
       <button class="button contacts__button" type="button">Напишите нам</button>
     </section>
@@ -234,9 +260,9 @@
       <fieldset class="modal__fieldset">
         <legend class="modal__legend">Выберите размер:</legend>
         <label for="size_s"><input aria-label="маленькая" type="checkbox" name="size_s" id="size_s"><b
-            class="modal__text">S</b></label>
+            class="modal__text">S</br></label>
         <label for="size_m"><input aria-label="средняя" type="checkbox" name="size_m" id="size_m"><b
-            class="modal__text">M</b></label>
+            class="modal__text">M</br></label>
         <label for="size_l"><input aria-label="большая" type="checkbox" name="size_l" id="size_l"><b
             class="modal__text">L</b></label>
       </fieldset>

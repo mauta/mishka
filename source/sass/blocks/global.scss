@@ -2,7 +2,22 @@
   background-color: #fff;
   font-family: "Open Sans","Tahoma", sans-serif;
   width: 320px;
-  padding: 0 calc(50% - 160px);
-  margin: 0;
+  margin: 0 calc(50% - 160px);
+  padding: 0;
+  box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
+  border: 1px solid #c6c6c6;
 }
 
+@media(min-width:768px){
+  .body{
+    width: 768px;
+    margin: 0 calc(50% - 768px/2);
+  }
+}
+
+@media(min-width:1150px){
+  .body{
+    width: 1150px;
+    margin: 0 calc(50% - 1050px/2);
+  }
+}

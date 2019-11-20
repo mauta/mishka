@@ -35,16 +35,23 @@
   // для ПП
   margin-left: -3px;
   margin-bottom: 27px;
+  border-collapse: collapse;
+
+
 }
 
 .product-week__row {
   height: 38px;
-  border-bottom: 1px solid #f1f1f1;
 
+
+}
+.product-week__field{
+  border-bottom: 1px solid $light-gray;
 }
 
 .product-week__value {
   padding-left: 27px;
+  border-bottom: 1px solid $light-gray;
 }
 
 .product-week__price {
@@ -57,12 +64,130 @@
   margin-bottom: 25px;
 }
 
-.product-week__img{
+.product-week__img {
   margin-bottom: 20px;
 }
 
-.product-week__button{
+
+
+@media(min-width:768px) {
+  .product-week__title {
+    @include title-big;
+  }
+
+  .product-week {
+    padding-top: 43px;
+    padding-left: 50px;
+
+  }
+
+  .product-week__title-wrap {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 55px;
+  }
+
+  .product-week__name {
+    width: 96px;
+    text-align: center;
+  }
+
+  .product-week__price {
+    @include text-big;
+    font-weight: 700;
+    margin-bottom: 34px;
+  }
+
+  .product-week__text{
+    @include text-big;
+    width: 292px;
+    margin-bottom: 54px;
+  }
+
+  .product-week__description{
+    @include text-big;
+    width: 292px;
+
+  }
+
+  .product-week__content{
+    display: flex;
+    flex-direction: column;
+    height: 404px;
+    flex-wrap: wrap;
+  }
+
+  .product-week__order,
+  .product-week__text-wrap{
+    order: 0;
+  }
+
+  .product-week__img{
+    order: 1;
+  }
 
 }
 
+@media(min-width:1150px){
+  .product-week__name{
+    order: 0;
+    padding-top: 13px;
+  }
 
+  .product-week__title{
+    @include title-bigest;
+    order: 1;
+  }
+
+  .product-week{
+    padding: 124px calc(50% - 1050px/2) 0;
+    margin-bottom: 34px;
+    // временно
+    // height: 736px;
+  }
+
+  .product-week__img{
+    width: 525px;
+    height: 636px;
+  }
+
+  .product-week__title-wrap{
+    justify-content: flex-start;
+    margin-left: 34px;
+    margin-bottom: 31px;
+  }
+
+  .product-week__content{
+    margin-left: 175px;
+
+    height: 500px;
+  }
+
+  .product-week__title--pos{
+    margin-left: 42px;
+  }
+
+  .product-week__text{
+    margin-bottom: 49px;
+  }
+   .product-week__row{
+     height: 40px;
+   }
+
+  .product-week__value{
+    padding: 0;
+  }
+
+  .product-week__description{
+    @include text;
+    margin-left: -3px;
+    margin-bottom: 105px;
+
+  }
+
+  .product-week__price{
+    font-size: 20px;
+    margin-bottom: 31px;
+  }
+
+}

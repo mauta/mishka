@@ -6,3 +6,19 @@
 .email__input{
   margin-bottom: 25px;
 }
+
+@media(min-width:768px){
+  .email__list{
+    font-size: 19px;
+  }
+
+  .email__legend{
+    width: 168px;
+    padding: 0;
+  }
+
+  .form-main__email{
+    background-color: $light-gray;
+    padding-top: 0;
+  }
+}

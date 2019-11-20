@@ -1,0 +1,172 @@
+.menu {
+  position: relative;
+  border: 1px solid red;
+}
+
+.menu__logo {
+  margin: 0 calc(50% - 43px);
+}
+
+.menu__logo-img {
+  margin-top: 22px;
+}
+
+.menu__list {
+  @include list;
+}
+
+.menu__link {
+  @include link;
+  color: $black;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: center;
+}
+
+
+.menu__toggle {
+  border: none;
+  width: 33px;
+  height: 33px;
+  background-color: $tuny;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+}
+
+.menu__sale {
+  display: none;
+}
+
+.menu__text {
+  display: none;
+}
+
+.menu__item {
+  margin: 0 auto;
+  width: 260px;
+  padding-left: 46px;
+  padding-top: 33px;
+  padding-bottom: 33px;
+}
+
+@media(min-width:768px) {
+
+  .menu__toggle {
+    display: none;
+  }
+
+  .menu {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 22px calc(50% - 668px/2);
+  }
+
+  .menu__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .menu__item {
+    width: 158px;
+    box-sizing: border-box;
+    padding: 25px 0;
+  }
+
+  .menu__order {
+    display: flex;
+    flex-wrap: wrap;
+    width: 345px;
+    box-sizing: border-box;
+    order: 0;
+  }
+
+  .menu__link-search {
+    display: none;
+  }
+
+  .menu__search {
+    width: 84px;
+    background-color: red;
+    box-sizing: border-box;
+  }
+
+  .menu__cart {
+    width: 260px;
+    box-sizing: border-box;
+    text-align: right;
+  }
+
+  .menu__logo {
+    margin: 0;
+    order: 0;
+    flex-grow: 1;
+  }
+
+  .menu__nav {
+    order: 1;
+    display: flex;
+    flex-wrap: wrap;
+    width: 334px;
+    box-sizing: border-box;
+    background-color: transparent;
+  }
+
+  .menu__sale {
+    display: none;
+  }
+
+  .menu__text {
+    @include text;
+    display: block;
+    order: 1;
+    flex-grow: 1;
+    padding: 25px 0;
+    text-align: right;
+    margin: 0;
+    background-color: transparent;
+  }
+
+}
+
+@media(min-width:1250px) {
+  .menu__sale {
+    display: block;
+    order: 3;
+    display: flex;
+    flex-wrap: wrap;
+    width: 375px;
+    box-sizing: border-box;
+  }
+
+  .menu {
+    margin: 22px calc(50% - 1050px/2);
+  }
+
+  .menu__nav {
+    order: 0;
+    width: 375px;
+    font-size: 17px;
+  }
+
+  .menu__logo {
+    order: 1;
+
+  }
+
+  .menu__order {
+    order: 2;
+    width: 350px;
+    font-size: 17px;
+  }
+
+  .menu__text {
+    order: 4;
+  }
+
+  .menu__item--small{
+    width: 185px;
+    font-size: 15px;
+  }
+}
