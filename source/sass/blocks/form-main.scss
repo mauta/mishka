@@ -1,8 +1,12 @@
 .form-main__title--wrap {
   background-color: $light-gray;
-  padding-top: 74px;
-  padding-bottom: 74px;
-  margin-bottom: 30px;
+  padding-top: 72px;
+  padding-bottom: 75px;
+  margin-bottom: 22px;
+}
+
+.form-main__button-wrap{
+  margin: 0 calc(50% - 130px);
 }
 
 .form-main__title {
@@ -23,6 +27,8 @@
   font-size: 13px;
   line-height: 24px;
   width: 245px;
+  margin: 0 calc(50% - 130px);
+  margin-bottom: 23px;
 }
 
 
@@ -36,7 +42,12 @@
 
 .form-main__note {
   @include text;
+  font-size: 14px;
+  margin-left: -4px;
+  margin-bottom: 30px;
 }
+
+
 
 .form-main__button {
   margin-bottom: 55px;
@@ -53,14 +64,20 @@
   }
 
   .form-main__title--wrap {
-    margin-bottom: 68px;
-    margin-top: -96px;
+    margin-bottom: 72px;
+    margin-top: -42px;
+    padding-top: 93px;
+    padding-bottom: 82px;
+    background-image: url(../../img/bg-zigzag-fill.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 0 213px;
   }
 
   .form-main__fieldset {
     box-sizing: border-box;
     width: 100%;
-    padding: 50px 50px 50px 50px;
+    padding: 0px 50px 10px 40px;
   }
 
   .form-main__fieldset-wrap {
@@ -71,34 +88,63 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 0 50px;
+    padding: 34px 50px;
+    width: auto;
+    margin: 0;
+
   }
 
   .form-main__note {
     @include text-big;
     order: 1;
+    padding-top: 9px;
   }
 
   .form-main__button {
     order: 0;
+    margin-bottom: 16px;
+  }
+
+  .form-main__color{
+    background-color: $light-gray;
+  }
+
+  .form-main__phone{
+    background-color: $light-gray;
+    padding-bottom: 0;
+    margin-right: 50px;
+  }
+
+  .form-main__email{
+    background-color: $light-gray;
+    padding-top: 0;
   }
 }
 
 @media(min-width:1150px) {
+
+  .form-main__title--wrap {
+    margin-bottom: 0px;
+    margin-top: -41px;
+    padding-bottom: 101px;
+    background-position: 0 237px;
+  }
+
 
   .form-main__title {
     @include title-bigest;
   }
 
   .form-main__content {
-    padding-top: 129px;
-    margin: 0;
+    padding-top: 124px;
 
   }
 
-  .form-main__text {
-    width: 675px;
+  .form-main__text{
+    width: 700px;
     margin: 0 auto;
+    padding-left: 0px;
+    margin-bottom: 62px;
   }
 
   .form-main{
@@ -115,5 +161,8 @@
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 0 225px;
+    margin-bottom: 34px;
     }
+
+
   }

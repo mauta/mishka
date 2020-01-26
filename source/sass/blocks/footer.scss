@@ -1,11 +1,42 @@
 .footer {
   background-color: #f1f1f1;
-  padding-top: 30px;
-  padding-left: 20px;
+  padding-top: 25px;
+  padding-left: 25px;
+  padding-right: 25px;
 }
 
 .footer__logo {
   display: none;
+}
+
+.copyright {
+  display: flex;
+  border-top: 1px solid rgba(68, 68, 68, 0.3);
+  padding-top: 27px;
+  padding-left: 42px;
+  padding-bottom: 13px;
+}
+
+
+.copyright__text {
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 18px;
+  margin-right: 23px;
+}
+
+.copyright__logo {
+  margin-top: -68px;
+  color:$tuny;
+
+  &:hover{
+    opacity: 0.7;
+  }
+
+  &:active,
+  &:focus{
+    opacity: 0.4;
+  }
 }
 
 @media(min-width:768px) {
@@ -14,82 +45,70 @@
 
   }
 
-  // .copyright__logo{
-  //   width: 27px;
-  //   height: 34px;
-  // }
+  .copyright {
+    border-top: none;
+  }
 
-  .footer{
+  .footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     padding-top: 51px;
-    padding-right: 50px;
-    padding-bottom: 52px;
+    padding-right: 44px;
+    padding-bottom: 28px;
     padding-left: 50px;
 
   }
 
-  .footer__social{
-    margin-left: 159px;
+  .footer__social {
+    margin-left: 87px;
+    width: 152px;
   }
 
-  .footer__copyright{
-    margin-left: auto;
+  .copyright__text {
+    padding-right: 22px;
+    display: block;
+    margin: 0;
+    margin-top: 8px;
   }
+
+  .footer__copyright {
+    margin-left: 0;
+    padding-top: 4px;
+  }
+
+  .copyright__logo {
+    margin-top: 0px;
+    height: 41px;
+  }
+
 }
 
-.social__list {
-  @include list;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  width: 141px;
-}
-
-.social__link {
-  @include link;
-  width: 30px;
-  height: 30px;
-  text-align: center;
-}
-
-.copyright__text {
-  font-size: 19px;
-  font-weight: 700;
-  line-height: 18px;
-}
-
-@media(min-width:1150px){
+@media(min-width:1150px) {
   .footer__logo {
     width: 102px;
     height: 34px;
   }
 
-  .footer__copyright{
-    margin-left: 0;
-  }
 
-  .footer__social{
-    margin-left: 0px;
+
+  .footer__social {
     padding-top: 7px;
   }
 
-  .social__list{
-    justify-content: space-between;
-    align-items: center;
-    margin-left: 78px;
+
+
+  .footer__copyright {
+    margin-left: 0;
+    padding-top: 5px;
   }
 
-  .copyright__text{
-    padding-right: 20px;
+  .copyright__logo {
+    margin-top: -2px;
   }
 
-  // .copyright__logo{
-  //   width: 41px;
-  //   height: 60px;
-  // }
+  .footer {
+    padding-bottom: 30px;
+  }
+
 }
-
-
-

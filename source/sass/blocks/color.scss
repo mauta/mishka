@@ -1,6 +1,24 @@
+.color {
+  margin: 0 calc(50% - 130px);
+
+}
+
 .color__legend {
   @include subtitle;
-  margin-bottom: 43px;
+  margin-bottom: 33px;
+  margin-left: -2px;
+  position: relative;
+}
+
+.color__legend::after {
+  content: '';
+  width: 198px;
+  height: 1px;
+  background-color: $tuny;
+  position: absolute;
+  right: 0px;
+  top: 9px;
+
 }
 
 .color__list {
@@ -10,42 +28,125 @@
   line-height: 18px;
 }
 
-.color__item{
-  margin-bottom: 25px;
+.color__item {
+  margin-bottom: 43px;
+  cursor: pointer;
 }
 
-@media(min-width:768px){
-  .color__list{
+.color__input {
+  @include hidden-input;
+}
+
+.color__label {
+  padding-left: 63px;
+  width: 170px;
+  display: block;
+  position: relative;
+  cursor: pointer;
+}
+
+.color__check {
+  position: absolute;
+  width: 36px;
+  height: 35px;
+  border: 2px solid black;
+  top: -11px;
+  left: 0px;
+  cursor: pointer;
+}
+
+.color__input:checked+.color__check::after {
+  content: '';
+  background-image: url(../../img/icon-tick.svg);
+  background-repeat: no-repeat;
+  background-position: -4px -1px;
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  top: 5px;
+  left: 7px;
+
+}
+
+@media(min-width:768px) {
+  .color__list {
     font-size: 19px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     width: 500px;
+    margin-right: 51px;
   }
 
-  .color__legend{
-    width: 168px;
+  .color__legend {
+    flex-grow: 1;
     display: block;
     padding: 0;
   }
 
-  .color__item{
-    width: 248px;
+  .color__item {
+    width: 47.5%;
+    margin-bottom: 58px;
   }
 
-  .form-main__color{
-    background-color: $light-gray;
+  .color {
+    margin: 0;
+    padding-top: 67px;
+    padding-left: 54px;
+    padding-right: 0px;
+  }
+
+  .color__legend::after {
+    display: none;
+  }
+
+  .color__label {
+    width: 100px;
+    padding-left: 81px;
+  }
+
+  .color__check {
+    width: 50px;
+    height: 48px;
+    top: -16px;
+    left: 0px;
+
+  }
+
+  .color__input:checked+.color__check::after {
+    content: '';
+    background-position: 0 0;
+    width: 38px;
+    height: 24px;
+    top: 14px;
+    left: 10px;
   }
 }
 
-@media(min-width:1250px){
-  .color__list{
+
+@media(min-width:1150px) {
+  .color__list {
     font-size: 19px;
     display: flex;
     flex-wrap: wrap;
-    width: 700px;
+    justify-content: space-between;
+    width: 726px;
+    margin: 0;
   }
 
-  .color__item{
+  .color__item {
     width: 200px;
   }
+
+  .color {
+    padding-left: 113px;
+    padding-top: 66px;
+    padding-right: 199px;
+  }
+
+  .color__legend {
+    width: 112px;
+    padding: 0;
+  }
+
 }

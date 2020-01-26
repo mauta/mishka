@@ -6,6 +6,7 @@
 .reviews {
   padding-top: 54px;
   padding-left: 29px;
+  padding-right: 29px;
 }
 
 .reviews__text {
@@ -19,7 +20,6 @@
   line-height: 27px;
   font-size: 17px;
   margin: 0;
-
 }
 
 .reviews__ig {
@@ -27,44 +27,88 @@
   line-height: 30px;
   font-style: normal;
   font-size: 17px;
+
+  margin-bottom: 29px;
 }
 
 .reviews__button-wrap {
-  height: 52px;
-  border: 1px solid red;
+
+  height: 50x;
   margin-bottom: 38px;
+  display: flex;
+}
+
+.reviews__button{
+  width: 260px;
+  margin-left: 1px;
+}
+
+.reviews__prev{
+  content: "";
+  width: 120px;
+  height: 48px;
+  background-image: url(../../img/icon-left-arrow.svg);
+  background-repeat: no-repeat;
+  background-position: 33px 12px;
+}
+
+.reviews__next{
+  content: "";
+  width: 120px;
+  height: 48px;
+  background-image: url(../../img/icon-right-arrow.svg);
+  background-repeat: no-repeat;
+  background-position: 33px 12px;
+}
+
+.reviews__prev:hover,
+.reviews__next:hover{
+  opacity: 0.6;
+}
+
+.reviews__prev:active,
+.reviews__next:active,
+.reviews__prev:focus,
+.reviews__next:focus{
+  opacity: 0.3;
 }
 
 @media(min-width:768px) {
   .reviews__title {
     @include title-big;
+    order: 0;
+    flex-grow: 1;
+    margin: 0;
+    margin-bottom: 49px;
+    // для ПП
+    margin-left: -4px;
+    margin-top: -2px;
   }
 
   .reviews__text {
     @include text-big;
-    width: 642px;
+    width: 643px;
+    margin-bottom: 56px;
+    order: 1;
   }
 
   .reviews {
-    padding-top: 80px;
-    padding-left: 47px;
+    padding-top: 79px;
+    padding-left: 50px;
+    padding-bottom: 13px;
     background-image: url(../../img/review@1x.jpg);
     background-repeat: no-repeat;
     background-position: 0 0;
+    margin-bottom: 67px;
+    min-height: 365px;
   }
 
   .reviews__content {
-    width: 671px;
-    margin: 0 auto;
+    width: 668px;
     display: flex;
     flex-wrap: wrap;
   }
 
-  .reviews__title {
-    order: 0;
-    flex-grow: 1;
-    margin-bottom: 65px;
-  }
 
   .reviews__button {
     order: 0;
@@ -74,7 +118,13 @@
 
   .reviews__button-wrap {
     order: 2;
-    width: 175px;
+    width: 196px;
+    padding-top: 3px;
+    margin-right: 0;
+  }
+
+  .reviews__author{
+    font-size: 18px;
   }
 
   .reviews__author-wrap {
@@ -82,10 +132,6 @@
     flex-grow: 1;
   }
 
-  .reviews__text {
-    order: 1;
-    margin-bottom: 68px;
-  }
 }
 
 @media(min-width:1150px) {
@@ -111,7 +157,7 @@
     margin: 0 auto;
     box-sizing: border-box;
     background-size: 350px 457px;
-    margin-bottom: 70px;
+    margin-bottom: 62px;
   }
 
   .reviews__text {

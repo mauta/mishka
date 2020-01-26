@@ -69,3 +69,10 @@
   line-height: 30px;
   margin: 0;
 }
+
+@mixin hidden-input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: absolute;
+}

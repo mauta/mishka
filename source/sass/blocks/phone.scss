@@ -1,11 +1,44 @@
 .phone__legend {
   @include subtitle;
-  margin-bottom: 43px;
+  margin-bottom: 5px;
+  margin-left: -3px;
+  position: relative;
 }
 
 .phone__input{
   margin-bottom: 25px;
 }
+
+.phone{
+  margin: 0 calc(50% - 130px);
+  margin-bottom: 6px;
+}
+
+
+
+.phone__legend::after{
+  content: '';
+    width: 198px;
+    height: 1px;
+    background-color: $tuny;
+    position: absolute;
+    right: 0px;
+    top: 9px;
+
+}
+
+.phone__input{
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid black;
+  padding: 19px 0 15px;
+}
+
+.phone__input::-webkit-input-placeholder {color:rgba(68, 68, 68, 0.3);font-size: 18px;}
+.phone__input::-moz-placeholder          {color:rgba(68, 68, 68, 0.3);font-size: 18px;}/* Firefox 19+ */
+.phone__input:-moz-placeholder           {color:rgba(68, 68, 68, 0.3);font-size: 18px;}/* Firefox 18- */
+.phone__input:-ms-input-placeholder      {color:rgba(68, 68, 68, 0.3);font-size: 18px;}
+
 
 @media(min-width:768px){
   .phone__list{
@@ -13,12 +46,49 @@
   }
 
   .phone__legend{
-    width: 168px;
+    width: 166px;
     padding: 0;
   }
-  .form-main__phone{
-    background-color: $light-gray;
-    padding-bottom: 0;
+
+  .phone__legend::after{
+    display: none;
   }
+
+  .phone{
+    margin: 0;
+    padding-top: 66px;
+    padding-left: 54px;
+    padding-right: 0px;
+  }
+
+.phone__input::-webkit-input-placeholder {padding-left: 17px;font-size: 18px;}
+.phone__input::-moz-placeholder          {padding-left: 17px;font-size: 18px;}/* Firefox 19+ */
+.phone__input:-moz-placeholder           {padding-left: 17px;font-size: 18px;}/* Firefox 18- */
+.phone__input:-ms-input-placeholder      {padding-left: 17px;font-size: 18px;}
+
+.phone__input{
+  background-color: transparent;
+  width: 501px;
+  padding-top: 2px;
+  padding-bottom: 17px;
 }
 
+
+}
+
+
+@media(min-width:1150px){
+
+  .phone{
+    padding-left: 116px;
+  }
+
+  .phone__legend{
+    width: 112px;
+    padding: 0;
+  }
+
+  .phone__input{
+    width:700px;
+  }
+}

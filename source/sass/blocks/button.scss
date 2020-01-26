@@ -1,5 +1,5 @@
 .button {
-  width: 260px;
+  width: 259px;
   height: 52px;
   border: 2px solid $gray;
   background-color: #ffffff;
@@ -11,43 +11,82 @@
   line-height: 20px;
   text-transform: uppercase;
   box-sizing: border-box;
+
+  &:hover {
+    color: white;
+    background-color: #444444;
+  }
+
+  &:active,
+  &:focus {
+    outline: none;
+    color: rgba(226, 226, 226, 0.35);
+    background-color: #444444;
+
+  }
 }
 
-.button--tuny{
+.button--reviews {
+  border: 1px solid $light-gray;
+  width: 130px;
+
+  &:hover {
+    background-color: transparent;
+    opacity: 0.6;
+  }
+
+  &:active,
+  &:focus {
+    outline: none;
+    background-color: transparent;
+    opacity: 0.3;
+  }
+}
+
+.button--tuny {
   background-color: $tuny;
-  border:none;
+  border: none;
   color: white;
   display: block;
   margin: 0 auto;
 }
 
-.button--cart{
-
+.button--cart {
   border: none;
   width: 20px;
   height: 20px;
-  // временно
-  background-color: $tuny;
+  background-color: transparent;
+  outline: none;
 }
 
-.button--catalog{
+.button--catalog {
   width: 192px;
 }
 
 @media(min-width:768px) {
-  .button{
+  .button {
     width: 292px;
   }
-  .button--catalog{
+
+  .button--catalog {
     width: 584px;
   }
 
-  .button--tuny{
+  .button--tuny {
     width: 350px;
   }
 
-  .button--form{
+  .button--form {
     width: 230px;
+  }
+
+  .button--catalog {
+    order: 1;
+  }
+
+  .button--reviews {
+    border: none;
+    width: 88px;
   }
 
 }
